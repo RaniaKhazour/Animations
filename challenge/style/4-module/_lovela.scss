@@ -1,0 +1,48 @@
+.love {
+    position: absolute;
+    top: 225px;
+    margin-left: -14px;
+
+    span.animation {
+        opacity: 0;
+        display: inline-block;
+        animation: goUpLetters 1.5s ease forwards;
+        transition: 2.3s;
+        
+
+        &.l { animation-delay: 1.2s; }
+        &.o { 
+            animation: goUpHeart 1.5s ease forwards; 
+            animation-delay: 1.45s; 
+            animation-duration: 2.4s;
+        }
+        &.v { animation-delay: 1.6s; }
+        &.e-dot { animation-delay: 1.75s; }
+        &.l-dot { animation-delay: 1.9s; }
+        &.a-dot { animation-delay: 2.05s; }
+    }
+}
+
+.la {
+    position: absolute;
+    top: 280px;
+    right: 80px;
+}
+
+p.live {
+    position: relative;
+    overflow: hidden;
+}
+
+p.live span.time {
+    opacity: 0;
+    display: inline-block;
+    animation: goUp 1.5s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: show 1.4s ease forwards;
+    animation-delay: 0.3s;
+}

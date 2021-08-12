@@ -1,0 +1,41 @@
+.tommy-container-img { 
+    position: relative; 
+    img {
+        opacity: 0;
+        animation: show 1.5s ease forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+.separator1 {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    animation: goRight 1.5s ease forwards;
+    animation-delay: 0.5s;
+
+    .separator3 {
+        width: 200px;
+        height: 50px;
+        z-index: 2;
+        animation: goRightLess 1.5s ease forwards;
+        animation-delay: 0.5s;
+        opacity: 0;
+    }
+}
+
+.separator2 {
+    width: 150px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+    animation: goRight 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
